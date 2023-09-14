@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>Kütusekulu kalkulaator</title>
+        <link rel="icon" type="images/x-icon" href="images/icons8-fuel-64.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body class="screen-background">
+        <div class="mainDiv">
+            <form>
+                <table class="mainTable">
+                    <tr class="label">
+                        <td>
+                            <label for="kütusekulu">Kütusekulu liitrites </label>
+                        </td>
+                    </tr>
+                        <td class="textInput">
+                            <input type="number" name="kütusekulu" id="kütusekulu" required />
+                        </td>
+                    <tr>
+                        <td class="label">
+                            <label for="kilomeetrid">Läbitud kilomeetrid </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="textInput">
+                            <input type="number" name="kilomeetrid" id="kilomeetrid" required />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="submit" value="Kalkuleeri" id="kalkuleeri">
+                        </td>
+                    </tr>
+                    <tr id="vastusRow">
+                        <td>
+                            <label for="vastus" id="vastusLabel">Kütusekulu:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="vastus"></p>  
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,104 @@
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background image or color to the body if needed */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    background-image: url(/images/roadbmw.webp);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the main container */
+.mainDiv {
+    width: 90%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 20px;
+    background-color: rgba(68,73,95,.8); /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* Style the table */
+.mainTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add space between the inputs and the table */
+}
+
+/* Style table cells */
+.mainTable td {
+    padding: 05px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Style form elements */
+.mainDiv label {
+    font-size: 16px;
+    margin-bottom: 0px;
+    display: block;
+    color: white;
+}
+
+.mainDiv input[type="number"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the calculate button */
+.mainDiv input[type="submit"] {
+    background-color: #0065B2; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.mainDiv input[type="submit"]:hover {
+    background-color: #0065B2; /* Darker blue on hover */
+}
+
+/* Style the result text */
+#vastusLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-top: 20px;
+    color: white;
+}
+
+#vastus {
+    font-size: 24px;
+    color: #007bff; /* Blue text color */
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .mainDiv {
+        margin: 10%;
+    }
+}
