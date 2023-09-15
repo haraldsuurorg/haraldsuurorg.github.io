@@ -99,9 +99,6 @@ body {
 
 /* Mobile optimization */
 @media (max-width: 768px) {
-    body {
-        overflow: hidden;
-    }
     .mainDiv {
         margin: 10%;
     }
